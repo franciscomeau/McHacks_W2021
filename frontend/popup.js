@@ -42,26 +42,16 @@ function addIngredientsToUI(ingredientSeasons) {
 		if(ingredientSeasons[key].in_season == "In season"){
 			// Print out in the inSeason div
 			printIngredients(ingredientSeasons[key].ingredient, 'in_season');
-			
-
 		} else if(ingredientSeasons[key].in_season == "Not in season"){
 			// Print out in the not_in_season div
 			printIngredients(ingredientSeasons[key].ingredient, 'not_in_season');
-
-
-		} else if(ingredientSeasons[key].in_season == "N/A"){
-			// Print out in the other div
-			printIngredients(key, 'other');
-
 		}
+		printIngredients(key, 'other', in_season=ingredientSeasons[key].in_season);
 	}
 	makeVisible();
-	
-
-	
 }
 
-function printIngredients(anIngredient, divID){
+function printIngredients(anIngredient, divID, in_season="N/A"){
 	let seasonality = document.getElementById(divID);
 	console.log("DIV IDDDDD" + divID);
 	console.log("HELLLLO" + anIngredient);
