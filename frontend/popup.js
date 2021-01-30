@@ -39,17 +39,37 @@ function getIngredientSeasons(url) {
 
 function addIngredientsToUI(ingredientSeasons) {
 	//DO DOM shit
+	var have_any_in_season_ingredients = false;
+	var have_any_not_in_season_ingredients = false;
+	
 	for(var key in ingredientSeasons){
 		console.log(ingredientSeasons[key].in_season);
 		if(ingredientSeasons[key].in_season == "In season"){
 			// Print out in the inSeason div
 			printIngredients(ingredientSeasons[key].ingredient, 'in_season');
+			have_any_in_season_ingredients = true;
 		} else if(ingredientSeasons[key].in_season == "Not in season"){
 			// Print out in the not_in_season div
 			printIngredients(ingredientSeasons[key].ingredient, 'not_in_season');
+			have_any_not_in_season_ingredients = true;
 		}
 		printIngredients(key, 'other', in_season=ingredientSeasons[key].in_season);
 	}
+	
+	if(!have_any_in_season_ingredients){
+		printIngredients("None...", 'in_season');
+	}
+
+	if(!have_any_not_in_season_ingredients){
+		if(!have_any_in_season_ingredients){
+			printIngredients("Also none!", 'not_in_season');
+		} else {
+			printIngredients("None!", 'not_in_season');
+		}
+	}
+	//printIngredients("None", 'not_in_season');
+
+	
 	makeVisible();
 }
 
