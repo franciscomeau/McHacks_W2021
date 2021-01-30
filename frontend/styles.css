@@ -81,20 +81,27 @@ button:hover{
   visibility: hidden;
   opacity: 0;
   width: 100%;
-  background-color: red;
   display: flex;
+  justify-content: space-evenly;
   text-align: center;
   line-height: 1.5rem;
 }
 
 .in_season{
-  width: 50%;
+  width: 45%;
   background-color: #B6DF22;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
 
 .not_in_season{
-  width: 50%;
+  width: 45%;
   background-color: #72B41F;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.in_season:hover, .not_in_season:hover{
+  transition: 500ms;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 
 .other{
