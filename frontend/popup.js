@@ -4,7 +4,8 @@ let count = 0;
 
 function getURL() {
 	if(count == 0){
-		makeInvisible();
+		makeButtonInvisible();
+		makeLoaderVisible();
 		
 		let url;
 		chrome.tabs.query({active: true, currentWindow: true}, function(tabs) {
@@ -50,6 +51,7 @@ function addIngredientsToUI(ingredientSeasons) {
 		}
 		printIngredients(key, 'other', in_season=ingredientSeasons[key].in_season);
 	}
+	makeLoaderInvisible();
 	makeVisible();
 }
 
@@ -71,8 +73,23 @@ function makeVisible(){
 	document.getElementById('seasonality').classList.add('visible');
 }
 
-function makeInvisible(){
+function makeButtonInvisible(){
 	document.getElementById('startApp').classList.add('invisible');
+}
+
+function makeLoaderVisible(){
+	document.getElementById('container').classList.add('loader_visible');
+}
+
+function makeLoaderInvisible(){
+	document.getElementById('container').classList.add('loader_invisible');
+}
+
+function createTitle(){
+	let ingredientNode = document.createElement('p');
+	let ingredientNodeText = document.createTextNode(anIngredient);
+	ingredientNode.appendChild(ingredientNodeText);
+	seasonality.appendChild(ingredientNode);
 }
 
 document.getElementById('startApp').addEventListener('click', getURL);

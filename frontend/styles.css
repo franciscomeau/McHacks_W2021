@@ -3,7 +3,10 @@ body {
   width: 450px;
   margin: 0;
   font-family: 'Source Sans Pro', sans-serif;
+  
 }
+
+
 
 p {
   font-size: 1rem;
@@ -58,17 +61,17 @@ header {
 /* Button */
 button {
 
-  height: 50px;
-  width: 50%;
+  height: 200px;
+  width: 200px;
   background: #f8664f;
   outline: none;
   display: block;
   font-size: 1.2rem;
-  margin: 5% auto;
+  margin: 25% auto;
   text-align: center;
   transition: 500ms;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  border-radius: 4px;
+  border-radius: 100%;
   border-style: none;
 }
 
@@ -76,7 +79,7 @@ button:hover {
   cursor: pointer;
   opacity: 0.9;
   transition: 500ms;
-  width: 52%;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
 
 /* Seasonality Information */
@@ -89,25 +92,25 @@ button:hover {
   line-height: 1.5rem;
 }
 
-.in_season {
+.inSeason {
   background-color: #c4f236;
 }
 
-.not_in_season {
+.notInSeason {
   background-color: #7ab92d;
 
 }
 
-.in_season,
-.not_in_season {
+.inSeason,
+.notInSeason {
   transition: 500ms;
   width: 45%;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   border-radius: 4px;
 }
 
-.in_season:hover,
-.not_in_season:hover,
+.inSeason:hover,
+.notInSeason:hover,
 .other:hover {
   transition: 900ms;
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
@@ -153,19 +156,15 @@ button:hover {
 .visible {
   visibility: visible;
   opacity: 1;
-  transition: 4s;
+  transition: 3s;
 }
 
-.not_in_season.visible {
-  transition-delay: 2s;
-}
-
-.not_in_season.visible {
-  transition-delay: 2s;
+.visible.seasonality{
+  transition-delay: 0.5s;
 }
 
 .visible.other {
-  transition-delay: 2000ms;
+  transition-delay: 1.2s;
 }
 
 .invisible {
@@ -183,4 +182,8 @@ button:hover {
     padding 500ms linear 1000ms,
     margin 500ms linear 1000ms;
 
+}
+
+.content{
+  min-height: 600px;
 }
