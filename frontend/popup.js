@@ -27,7 +27,7 @@ function getIngredientSeasons(url) {
     }).then(response => {
 		response.json().then(body => {
 			console.log('fetched!', response, body);
-			addIngredientsToUI(body);
+			addIngredientsToUI(body.ingredients);
 		})
     }).catch(error => {
         console.error(error);
