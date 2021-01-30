@@ -37,11 +37,17 @@ header {
   max-height: 65.40px;
 }
 
-header > a > img {
+.logo {
   width: 10%;
   position: absolute;
   left: 0;
   margin-left: 2.5%;
+  transition: 300ms;
+}
+
+.logo:hover{
+  width: 12%;
+  transition: 300ms;
 }
 
 /* Button */
