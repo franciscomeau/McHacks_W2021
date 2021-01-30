@@ -7,10 +7,14 @@
     "persistent": false
   },
   "page_action": {
-    "default_popup": "popup.html"
+    "default_popup": "popup.html",
+    "default_icon" :{
+        "16": "logo.png",
+        "32":"logo.png",
+        "64":"logo.png",
+        "128":"logo.png"
+    }
   },
-  "manifest_version": 2,
-  "default_icon" :{
-      "16": "logo.png"
-  }
+  "manifest_version": 2
+ 
 }
