@@ -12,6 +12,8 @@ def get_seasonal_details():
     print('*' * 100)
     print(request)
     print(request.get_json())
+    print(request.headers)
+    print('*' * 100)
     url = request.get_json()['url']
     ingredients = get_ingredients_from_url(url)
     in_season_dict = check_seasonality(ingredients, 1)
