@@ -4,6 +4,8 @@ let count = 0;
 
 function getURL() {
 	if(count == 0){
+		makeInvisible();
+		
 		let url;
 		chrome.tabs.query({active: true, currentWindow: true}, function(tabs) {
 			 var activeTab = tabs[0];
@@ -67,6 +69,10 @@ function makeVisible(){
 	document.getElementById('not_in_season').classList.add('visible');
 	document.getElementById('other').classList.add('visible');
 	document.getElementById('seasonality').classList.add('visible');
+}
+
+function makeInvisible(){
+	document.getElementById('startApp').classList.add('invisible');
 }
 
 document.getElementById('startApp').addEventListener('click', getURL);

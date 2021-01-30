@@ -58,18 +58,18 @@ header {
 /* Button */
 button {
 
-  height: 40px;
+  height: 50px;
   width: 50%;
+  background: #f8664f;
   outline: none;
-  border-radius: 4px;
-  border-style: solid;
-  border-width: 1px;
-  background: #F57E52;
   display: block;
   font-size: 1.2rem;
   margin: 5% auto;
   text-align: center;
   transition: 500ms;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  border-style: none;
 }
 
 button:hover {
@@ -90,11 +90,11 @@ button:hover {
 }
 
 .in_season {
-  background-color: #B6DF22;
+  background-color: #c4f236;
 }
 
 .not_in_season {
-  background-color: #72B41F;
+  background-color: #7ab92d;
 
 }
 
@@ -107,7 +107,8 @@ button:hover {
 }
 
 .in_season:hover,
-.not_in_season:hover, .other:hover {
+.not_in_season:hover,
+.other:hover {
   transition: 900ms;
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
@@ -122,15 +123,16 @@ button:hover {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   margin: 0 auto;
   transition: 500ms;
+  opacity: 0;
 }
 
-.seasonality_title{
+.seasonality_title {
   display: flex;
   justify-content: center;
   position: relative;
 }
 
-.seasonality_title img{
+.thumbs_up {
   width: 10%;
   position: absolute;
   left: 40px;
@@ -138,10 +140,47 @@ button:hover {
   bottom: auto;
 }
 
+.thumbs_down {
+  width: 10%;
+  position: absolute;
+  left: 26px;
+  top: 20.325px;
+  bottom: auto;
+}
+
+
+/* */
 .visible {
   visibility: visible;
   opacity: 1;
-  transition: 500ms;
+  transition: 4s;
 }
 
-/* Loader */
+.not_in_season.visible {
+  transition-delay: 2s;
+}
+
+.not_in_season.visible {
+  transition-delay: 2s;
+}
+
+.visible.other {
+  transition-delay: 2000ms;
+}
+
+.invisible {
+  height: 0px;
+  font-size: 0;
+  width: 0;
+  visibility: hidden;
+  padding: 0;
+  margin: 0 auto;
+  transition:
+    height 500ms linear 0s,
+    font-size 500ms linear 0s,
+    width 500ms linear 0s,
+    visibility 500ms linear 0s,
+    padding 500ms linear 1000ms,
+    margin 500ms linear 1000ms;
+
+}
