@@ -48,6 +48,6 @@ def check_seasonality(recipe_ingredients, month):
 
 if __name__ == '__main__':
   # print(ALL_INGREDIENTS)
-  url = 'https://www.allrecipes.com/recipe/238989/vegan-tuscan-white-beans/?internalSource=recipe%20hub&referringContentType=Search&clickId=cardslot%2054'
+  url = 'https://www.allrecipes.com/recipe/77194/bolognese-stuffed-bell-peppers/?internalSource=hub%20recipe&referringContentType=Search&clickId=cardslot%209'
   recipe_ingredients = get_ingredients_from_url(url)
   print(check_seasonality(recipe_ingredients, 1))
