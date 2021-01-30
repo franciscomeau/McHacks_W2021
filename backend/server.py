@@ -20,7 +20,7 @@ def get_seasonal_details():
 
     print(in_season_dict)
     
-    return json.dumps(request.get_json()), 200, {'ContentType':'application/json'}
+    return json.dumps(in_season_dict), 200, {'ContentType':'application/json'}
 
 
 if __name__ == '__main__':
