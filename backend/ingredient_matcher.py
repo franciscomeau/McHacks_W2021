@@ -29,6 +29,10 @@ def get_ingredients_from_url(url):
   return scrape_me(url).ingredients()
 
 
+def get_recipe_title_from_url(url):
+  return scrape_me(url).title()
+
+
 def check_seasonality(recipe_ingredients, month):
   in_season = SEASONS_TO_PRODUCE[MONTHS[month - 1]]
   seasonality_dict = {}
