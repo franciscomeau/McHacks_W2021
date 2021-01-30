@@ -1,0 +1,57 @@
+body {
+  height: 540px;
+  width: 450px;
+  margin: 0;
+
+}
+/* Header */
+.title {
+  font-family: 'Dancing Script', cursive;
+  text-align: center;
+  font-size: 2rem;
+  margin: 0;
+  padding: 3%;
+  align-self: stretch;
+}
+
+header {
+  position: relative;
+  background-color: #72C8F0;
+  align-items: center;
+}
+
+header > a > img {
+  width: 10%;
+  position: absolute;
+  left: 0;
+  margin-left: 2.5%;
+}
+
+/* Button */
+button {
+  height: 40px;
+  width: 70%;
+  outline: none;
+  border-radius: 4px;
+  border-style: solid;
+  border-width: 1px;
+  background: #F57E52;
+  display: block;
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin: 0 auto;
+  text-align: center;
+  font-family: 'Source Sans Pro', sans-serif;
+  transition: 500ms;
+}
+
+button:hover{
+  cursor: grab;
+  opacity: 0.5;
+  transition: 500ms;
+}
+
+
+
+
+
