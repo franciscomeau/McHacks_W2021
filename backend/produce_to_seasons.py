@@ -12,4 +12,4 @@ for season in SEASONS:
       produce_to_seasons[produce].append(season)
 
 with open('produce_to_seasons.json', 'w') as f:
-  json.dump(produce_to_seasons, f)
+  json.dump(produce_to_seasons, f, indent=4)
