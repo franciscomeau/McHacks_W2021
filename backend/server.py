@@ -1,6 +1,6 @@
 from flask import Flask, request
 from flask_cors import CORS
-from ingredient_matcher import check_seasonality, get_ingredients_from_url
+from ingredient_matcher import check_seasonality, get_ingredients_from_url, get_recipe_title_from_url
 import json
 
 app = Flask(__name__)
@@ -16,12 +16,13 @@ def get_seasonal_details():
     print('*' * 100)
     url = request.get_json()['url']
     month = request.get_json()['month']
+    title = get_recipe_title_from_url(url)
     ingredients = get_ingredients_from_url(url)
     in_season_dict = check_seasonality(ingredients, month)
 
     print(in_season_dict)
-    
-    return json.dumps(in_season_dict), 200, {'ContentType':'application/json'}
+
+    return json.dumps({'title': title, 'ingredients': in_season_dict}), 200, {'ContentType': 'application/json'}
 
 
 if __name__ == '__main__':
