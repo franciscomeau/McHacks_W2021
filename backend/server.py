@@ -9,6 +9,7 @@ CORS(app)
 
 @app.route("/", methods=['POST'])
 def get_seasonal_details():
+    print('*' * 100)
     print(request)
     url = request.get_json()['url']
     ingredients = get_ingredients_from_url(url)
