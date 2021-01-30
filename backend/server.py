@@ -18,11 +18,11 @@ def get_seasonal_details():
     month = request.get_json()['month']
     title = get_recipe_title_from_url(url)
     ingredients = get_ingredients_from_url(url)
-    in_season_dict = check_seasonality(ingredients, month)
+    in_season_dict, in_season_ratio = check_seasonality(ingredients, month)
 
     print(in_season_dict)
 
-    return json.dumps({'title': title, 'ingredients': in_season_dict}), 200, {'ContentType': 'application/json'}
+    return json.dumps({'title': title, 'ingredients': in_season_dict, 'in_season_ratio': in_season_ratio}), 200, {'ContentType': 'application/json'}
 
 
 if __name__ == '__main__':
