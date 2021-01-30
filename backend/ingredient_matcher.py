@@ -34,13 +34,15 @@ def check_seasonality(recipe_ingredients, month):
   seasonality_dict = {}
   for rec_ing in recipe_ingredients:
     if any([re.search(r'\b{}\b'.format(filter_word), rec_ing, re.IGNORECASE) for filter_word in FILTER_WORDS]):
-      seasonality_dict[rec_ing] = 'N/A'
+      seasonality_dict[rec_ing] = {'in_season': 'N/A', 'ingredient': None}
     elif any([re.search(stem_produce(in_season_ing), rec_ing, re.IGNORECASE) for in_season_ing in in_season]):
-      seasonality_dict[rec_ing] = 'In season'
+      first_match = next(in_season_ing for in_season_ing in in_season if re.search(stem_produce(in_season_ing), rec_ing, re.IGNORECASE))
+      seasonality_dict[rec_ing] = {'in_seasons': 'In season', 'ingredient': first_match}
     elif any([re.search(stem_produce(ing), rec_ing, re.IGNORECASE) for ing in ALL_INGREDIENTS]):
-      seasonality_dict[rec_ing] = 'Not in season'
+      first_match = next(ing for ing in ALL_INGREDIENTS if re.search(stem_produce(ing), rec_ing, re.IGNORECASE))
+      seasonality_dict[rec_ing] = {'in_seasons': 'Not in season', 'ingredient': first_match}
     else:
-      seasonality_dict[rec_ing] = 'N/A'
+      seasonality_dict[rec_ing] = {'in_season': 'N/A', 'ingredient': None}
   return seasonality_dict
 
 
