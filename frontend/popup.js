@@ -1,7 +1,6 @@
-startApp.onclick = function(element) {
-	chrome.tabs.query({active: true, lastFocusedWindow: true}, tabs => {
-	    let url = tabs[0].url;
-	});
-	
-	console.log("blabla");
+function getURL() {
+	var myUrl = "testing 1 2";
+	console.log(myUrl);
 };
+
+	document.getElementById('startApp').addEventListener('click', getURL);
