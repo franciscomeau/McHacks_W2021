@@ -1,13 +1,18 @@
 let date = new Date();
 let month = date.getMonth() + 1;
+let count = 0;
 
 function getURL() {
-	let url;
-	chrome.tabs.query({active: true, currentWindow: true}, function(tabs) {
-	     var activeTab = tabs[0];
-		 url = activeTab.url;
-		 getIngredientSeasons(url);
-      });
+	if(count == 0){
+		let url;
+		chrome.tabs.query({active: true, currentWindow: true}, function(tabs) {
+			 var activeTab = tabs[0];
+			 url = activeTab.url;
+			 getIngredientSeasons(url);
+		  });
+		  count++;
+	}
+
     
 };
 
@@ -26,7 +31,8 @@ function getIngredientSeasons(url) {
 		})
     }).catch(error => {
         console.error(error);
-    });
+	});
+	
 }
 
 function addIngredientsToUI(ingredientSeasons) {
@@ -49,6 +55,8 @@ function addIngredientsToUI(ingredientSeasons) {
 
 		}
 	}
+	makeVisible();
+	
 
 	
 }
@@ -72,4 +80,4 @@ function makeVisible(){
 }
 
 document.getElementById('startApp').addEventListener('click', getURL);
-document.getElementById('startApp').addEventListener('click', makeVisible);
+
