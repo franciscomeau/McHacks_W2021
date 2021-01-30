@@ -33,7 +33,7 @@ function addIngredientsToUI(ingredientSeasons) {
 	//DO DOM shit
 	console.log(ingredientSeasons);
 	for(var key in ingredientSeasons){
-		console.log(key);
+		console.log(ingredientSeasons[key].in_season);
 	}
 
 	
