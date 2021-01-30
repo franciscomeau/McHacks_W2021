@@ -31,7 +31,6 @@ function getIngredientSeasons(url) {
 
 function addIngredientsToUI(ingredientSeasons) {
 	//DO DOM shit
-	console.log(ingredientSeasons);
 	for(var key in ingredientSeasons){
 		console.log(ingredientSeasons[key].in_season);
 		if(ingredientSeasons[key].in_season == "In season"){
@@ -46,7 +45,7 @@ function addIngredientsToUI(ingredientSeasons) {
 
 		} else if(ingredientSeasons[key].in_season == "N/A"){
 			// Print out in the other div
-			printIngredients(ingredientSeasons[key].ingredient, 'other');
+			printIngredients(key, 'other');
 
 		}
 	}
@@ -56,13 +55,21 @@ function addIngredientsToUI(ingredientSeasons) {
 
 function printIngredients(anIngredient, divID){
 	let seasonality = document.getElementById(divID);
+	console.log("DIV IDDDDD" + divID);
+	console.log("HELLLLO" + anIngredient);
 
 	let ingredientNode = document.createElement('p');
 	let ingredientNodeText = document.createTextNode(anIngredient);
 	ingredientNode.appendChild(ingredientNodeText);
 	seasonality.appendChild(ingredientNode);
-
 }
 
+function makeVisible(){
+	document.getElementById('in_season').classList.add('visible');
+	document.getElementById('not_in_season').classList.add('visible');
+	document.getElementById('other').classList.add('visible');
+	document.getElementById('seasonality').classList.add('visible');
+}
 
 document.getElementById('startApp').addEventListener('click', getURL);
+document.getElementById('startApp').addEventListener('click', makeVisible);
