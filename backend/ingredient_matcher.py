@@ -10,7 +10,7 @@ with open('produce_to_seasons.json') as f:
 
 ALL_INGREDIENTS = [ing for l in SEASONS_TO_PRODUCE.values() for ing in l]
 
-MONTHS = ['jan', 'feb', 'mar', 'apr', 'may', 'jun', 'jul', 'aug', 'sep', 'oct', 'nov', 'dec']
+MONTHS = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']
 
 FILTER_WORDS = ['can', 'cans', 'canned', 'black pepper', 'cayenne pepper', 'paste', 'frozen', 'flakes']
 
@@ -47,7 +47,8 @@ def check_seasonality(recipe_ingredients, month):
 
 
 if __name__ == '__main__':
-  # print(ALL_INGREDIENTS)
+  import pprint
+  pp = pprint.PrettyPrinter(indent=2)
   url = 'https://www.allrecipes.com/recipe/77194/bolognese-stuffed-bell-peppers/?internalSource=hub%20recipe&referringContentType=Search&clickId=cardslot%209'
   recipe_ingredients = get_ingredients_from_url(url)
-  print(check_seasonality(recipe_ingredients, 1))
+  pp.pprint(check_seasonality(recipe_ingredients, 12))
