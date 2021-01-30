@@ -78,6 +78,8 @@ button:hover{
 
 /* Seasonality Information */
 .seasonality{
+  visibility: hidden;
+  opacity: 0;
   width: 100%;
   background-color: red;
   display: flex;
@@ -87,18 +89,26 @@ button:hover{
 
 .in_season{
   width: 50%;
-  background-color: blue;
+  background-color: #B6DF22;
 }
 
 .not_in_season{
   width: 50%;
-  background-color: yellow;
+  background-color: #72B41F;
 }
 
 .other{
+  visibility: hidden;
   width: 100%;
   text-align: center;
   line-height: 1.5rem;
+  background-color: #72C8F0;
+}
+
+.visible{
+  visibility: visible;
+  opacity: 1;
+  transition: 500ms;
 }
 
 
