@@ -2,7 +2,7 @@
   "name": "Well Seasoned",
   "version": "1.0",
   "description": "McHacks W2021 project - Francis Comeau, Affan Jilani, Matthew Liu, John Paragas",
-  "permissions": ["declarativeContent", "storage"],
+  "permissions": ["declarativeContent", "storage", "tabs"],
   "background": {
     "scripts": ["background.js"],
     "persistent": false
