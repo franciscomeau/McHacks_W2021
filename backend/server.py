@@ -21,7 +21,7 @@ def get_seasonal_details():
         title = get_recipe_title_from_url(url)
         ingredients = get_ingredients_from_url(url)
     except WebsiteNotImplementedError as e:
-        json.dumps({'error': e}), 403, {'ContentType': 'application/json'}
+        json.dumps({'error': e.message}), 403, {'ContentType': 'application/json'}
 
     in_season_dict, in_season_ratio = check_seasonality(ingredients, month)
 
