@@ -17,6 +17,7 @@
 }
 
 .container{
+    margin-top: 25%;
     height: 217.44px;
     display: flex;
     align-items: center;
@@ -37,6 +38,7 @@
     transition: 500ms;
     visibility: hidden;
     opacity: 0;
+    margin-top: 0;
 }
 
 @keyframes loading-banana {

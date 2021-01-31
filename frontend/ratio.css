@@ -1,0 +1,71 @@
+:root {
+    --fillRatio: 0%;
+    --finalColor: red;
+}
+
+.bar {
+    display: flex;
+    align-items: center;
+    width: 93%;
+    height: 15px;
+    border-style: solid;
+    border-width: 3px;
+    border-color: lightslategray;
+    border-radius: 100px;
+    margin: 0 auto;
+    animation: forwards loadIn 2s ease-out 2s;
+    opacity: 0;
+}
+
+.progress {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: 700;
+    margin-left: 2.5px;
+    margin-right: 2.5px;
+    border-radius: 100px;
+    height: 10px;
+    font-size: 0;
+    animation: forwards fillUp 2s ease-out 2.5s, forwards colorChange 2s ease-out 2s;
+    text-align: center;
+
+}
+
+.SOMeter {
+    text-align: center;
+    margin-bottom: 5%;
+    opacity: 0;
+    animation: forwards loadIn 2s ease-out 2.5s;
+}
+
+@keyframes loadIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes colorChange {
+    0% {
+        background-color: red;
+    }
+
+    100% {
+        background-color: var(--finalColor);
+    }
+}
+
+@keyframes fillUp {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: var(--fillRatio);
+    }
+}
