@@ -60,6 +60,12 @@
         "March",
         "December"
     ],
+    "Yellow Onions": [
+        "January",
+        "February",
+        "March",
+        "December"
+    ],
     "Garlic": [
         "January",
         "February",
@@ -104,6 +110,98 @@
         "February",
         "March",
         "December"
+    ],
+    "Mushrooms": [
+        "January",
+        "February",
+        "March",
+        "April",
+        "May",
+        "June",
+        "July",
+        "August",
+        "September",
+        "October",
+        "November",
+        "December"
+    ],
+    "Bananas": [
+        "January",
+        "February",
+        "March",
+        "April",
+        "May",
+        "June",
+        "July",
+        "August",
+        "September",
+        "October",
+        "November",
+        "December"
+    ],
+    "Grapefruit": [
+        "January",
+        "February",
+        "March",
+        "April",
+        "May",
+        "June"
+    ],
+    "Kiwi": [
+        "January",
+        "February",
+        "March",
+        "April",
+        "May",
+        "October",
+        "November",
+        "December"
+    ],
+    "Lemons": [
+        "January",
+        "February",
+        "March",
+        "April",
+        "May",
+        "June",
+        "July",
+        "August",
+        "September",
+        "October",
+        "November",
+        "December"
+    ],
+    "Oranges": [
+        "January",
+        "February",
+        "March",
+        "April",
+        "May",
+        "June",
+        "November",
+        "December"
+    ],
+    "Pomegranates": [
+        "January",
+        "October",
+        "November",
+        "December"
+    ],
+    "Tangerines": [
+        "January",
+        "February",
+        "March",
+        "April",
+        "May",
+        "November",
+        "December"
+    ],
+    "Pineapple": [
+        "March",
+        "April",
+        "May",
+        "June",
+        "July"
     ],
     "Asparagus": [
         "April",
@@ -204,7 +302,12 @@
         "September",
         "October"
     ],
-    "Peas": [
+    "Green Peas": [
+        "May",
+        "June",
+        "July"
+    ],
+    "Snow Peas": [
         "May",
         "June",
         "July"
@@ -214,6 +317,13 @@
         "June",
         "July",
         "August"
+    ],
+    "Mangoes": [
+        "May",
+        "June",
+        "July",
+        "August",
+        "September"
     ],
     "Lettuce": [
         "June",
@@ -265,6 +375,12 @@
     "Fennel": [
         "June"
     ],
+    "Papayas": [
+        "June",
+        "July",
+        "August",
+        "September"
+    ],
     "Raspberries": [
         "July",
         "August"
@@ -311,6 +427,22 @@
         "July",
         "August",
         "September"
+    ],
+    "Cantaloupe": [
+        "July",
+        "August",
+        "September"
+    ],
+    "Bok Choy": [
+        "July",
+        "August"
+    ],
+    "Rapini": [
+        "July",
+        "August",
+        "September",
+        "October",
+        "November"
     ],
     "Apples": [
         "August",
@@ -398,6 +530,10 @@
         "November"
     ],
     "Quince": [
+        "October",
+        "November"
+    ],
+    "Partridgeberries": [
         "October",
         "November"
     ]
