@@ -1,0 +1,85 @@
+.loader-banana {
+    animation: loading-banana 4s linear infinite;
+    margin: 0 auto;
+    display: block;
+    position: absolute;
+    left: calc(450px/2 - 217.44px/2);
+
+}
+
+.loader-tomato {
+    animation: loading-tomato 4s linear infinite;
+    margin: 0 auto;
+    display: block;
+    position: absolute;
+    left: calc(450px/2 - 217.44px/2);
+
+}
+
+.container{
+    height: 217.44px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.loader_visible{
+    visibility: visible;
+    opacity: 1;
+    transition-duration: 1000ms;
+}
+
+.loader_invisible{
+    width: 0;
+    height: 0;
+    transition: 500ms;
+    visibility: hidden;
+    opacity: 0;
+}
+
+@keyframes loading-banana {
+    0% {
+        transform: rotate(0deg);
+        width: 0;
+    }
+
+    25% {
+        transform: rotate(360deg);
+        width: 217.44px;
+    }
+
+    50% {
+        transform: rotate(0deg);
+        width: 0;
+    }
+
+    100% {
+        transform: rotate(0deg);
+        width: 0;
+    }
+
+}
+
+@keyframes loading-tomato {
+    0% {
+        transform: rotate(0deg);
+        width: 0;
+    }
+
+    50% {
+        transform: rotate(0deg);
+        width: 0;
+    }
+
+    75% {
+        transform: rotate(360deg);
+        width: 217.44px;
+    }
+
+    100% {
+        transform: rotate(0deg);
+        width: 0;
+    }
+}

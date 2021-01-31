@@ -6,42 +6,57 @@
   <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Source+Sans+Pro:wght@300&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="loader.css">
 </head>
 
 <body>
-  <header>
-    <a href="https://facebook.com"><img src="logo.png" alt="logo" class="logo"></a>
-    <h1 class="title">Well Seasoned</h1>
-  </header>
+  <div class="content">
 
-  <button id="startApp">Season Me!</button>
 
-  <div>
+    <header>
+      <a href="https://facebook.com"><img src="logo.png" alt="logo" class="logo"></a>
+      <h1 class="title">Well Seasoned</h1>
+    </header>
 
-  </div>
+    <button id="startApp">Season Me!</button>
+    <div class="container" id="container">
 
-  <div class="seasonality" id="seasonality">
-    <div class="in_season" id="in_season">
-      <div class="seasonality_title">
-        <img src="thumbs-up.png" alt="">
-        <h3>In Season</h3>
-      </div>
-
+      <img src="banana.png" alt="" class="loader-banana">
+      <img src="tomato.png" alt="" class="loader-tomato">
     </div>
-    <div class="not_in_season" id="not_in_season">
-      <div class="seasonality_title">
-        <img src="thumbs-down.png" alt="">
-        <h3>Not In Season</h3>
+
+
+
+    <div class="seasonality" id="seasonality">
+      <div class="inSeason" id="in_season">
+        <div class="seasonality_title">
+          <img src="thumbs-up.png" alt="" class="thumbs_up">
+          <h3>In Season</h3>
+        </div>
+
+      </div>
+      <div class="notInSeason" id="not_in_season">
+        <div class="seasonality_title">
+          <img src="thumbs-down.png" alt="" class="thumbs_down">
+          <h3>Not In Season</h3>
+        </div>
       </div>
     </div>
-  </div>
-  <div class="other" id="other">
-    <h3>Other</h3>
+    <div class="other" id="other">
+      <div class="seasonality_title">
+        <img src="recipe-book.png" alt="" class="recipe_book">
+        <h3>Ingredients</h3>
+      </div>
+     
+    </div>
   </div>
 
   <script src="popup.js"></script>
   <script src="seasonality.js"></script>
 
+  <script src="popup.js"></script>
+  <script src="seasonality.js"></script>
+  </div>
 </body>
 
 </html>

@@ -6,11 +6,20 @@
       "Carrots",
       "Cabbage",
       "Red Onions",
+      "Yellow Onions",
       "Garlic",
       "Leeks",
       "Potatoes",
       "Squash",
-      "Sweet Potatoes"
+      "Sweet Potatoes",
+      "Mushrooms",
+      "Bananas",
+      "Grapefruit",
+      "Kiwi",
+      "Lemons",
+      "Oranges",
+      "Pomegranates",
+      "Tangerines"
    ],
    "February":[
       "Rutabagas",
@@ -19,11 +28,19 @@
       "Carrots",
       "Cabbage",
       "Red Onions",
+      "Yellow Onions",
       "Garlic",
       "Leeks",
       "Potatoes",
       "Squash",
-      "Sweet Potatoes"
+      "Sweet Potatoes",
+      "Mushrooms",
+      "Bananas",
+      "Grapefruit",
+      "Kiwi",
+      "Lemons",
+      "Oranges",
+      "Tangerines"
    ],
    "March":[
       "Rutabagas",
@@ -32,11 +49,20 @@
       "Carrots",
       "Cabbage",
       "Red Onions",
+      "Yellow Onions",
       "Garlic",
       "Leeks",
       "Potatoes",
       "Squash",
-      "Sweet Potatoes"
+      "Sweet Potatoes",
+      "Mushrooms",
+      "Bananas",
+      "Grapefruit",
+      "Kiwi",
+      "Lemons",
+      "Oranges",
+      "Pineapple",
+      "Tangerines"
    ],
    "April":[
       "Asparagus",
@@ -46,7 +72,15 @@
       "Fava Beans",
       "Rhubarb",
       "Bell Peppers",
-      "Tomatoes"
+      "Tomatoes",
+      "Mushrooms",
+      "Bananas",
+      "Grapefruit",
+      "Kiwi",
+      "Lemons",
+      "Oranges",
+      "Pineapple",
+      "Tangerines"
    ],
    "May":[
       "Asparagus",
@@ -61,8 +95,18 @@
       "Swiss Chard",
       "Green Onions",
       "Scallions",
-      "Peas",
-      "Cherries"
+      "Green Peas",
+      "Snow Peas",
+      "Cherries",
+      "Mushrooms",
+      "Bananas",
+      "Grapefruit",
+      "Kiwi",
+      "Lemons",
+      "Mangoes",
+      "Oranges",
+      "Pineapple",
+      "Tangerines"
    ],
    "June":[
       "Asparagus",
@@ -83,13 +127,22 @@
       "Celery",
       "Swiss Chard",
       "Garlic",
-      "Peas",
+      "Green Peas",
+      "Snow Peas",
       "Summer Squash",
       "Tomatoes",
       "Turnips",
       "Zucchini",
       "Fennel",
-      "Cherries"
+      "Cherries",
+      "Mushrooms",
+      "Bananas",
+      "Grapefruit",
+      "Lemons",
+      "Mangoes",
+      "Oranges",
+      "Papayas",
+      "Pineapple"
    ],
    "July":[
       "Gooseberries",
@@ -113,7 +166,8 @@
       "Lettuce",
       "Green Onions",
       "Scallions",
-      "Peas",
+      "Green Peas",
+      "Snow Peas",
       "Bell Peppers",
       "Potatoes",
       "Radishes",
@@ -127,7 +181,16 @@
       "Beets",
       "Peaches",
       "Watermelon",
-      "Kale"
+      "Kale",
+      "Cantaloupe",
+      "Bok Choy",
+      "Mushrooms",
+      "Rapini",
+      "Bananas",
+      "Lemons",
+      "Mangoes",
+      "Papayas",
+      "Pineapple"
    ],
    "August":[
       "Raspberries",
@@ -179,7 +242,15 @@
       "Peaches",
       "Watermelon",
       "Kale",
-      "Pears"
+      "Pears",
+      "Cantaloupe",
+      "Bok Choy",
+      "Mushrooms",
+      "Rapini",
+      "Bananas",
+      "Lemons",
+      "Mangoes",
+      "Papayas"
    ],
    "September":[
       "Cranberries",
@@ -223,7 +294,14 @@
       "Eggplants",
       "Nectarines",
       "Watermelon",
-      "Kale"
+      "Kale",
+      "Cantaloupe",
+      "Mushrooms",
+      "Rapini",
+      "Bananas",
+      "Lemons",
+      "Mangoes",
+      "Papayas"
    ],
    "October":[
       "Cranberries",
@@ -257,7 +335,14 @@
       "Turnips",
       "Beets",
       "Eggplants",
-      "Kale"
+      "Kale",
+      "Partridgeberries",
+      "Mushrooms",
+      "Rapini",
+      "Bananas",
+      "Kiwi",
+      "Lemons",
+      "Pomegranates"
    ],
    "November":[
       "Cranberries",
@@ -277,7 +362,16 @@
       "Rutabagas",
       "Turnips",
       "Apples",
-      "Beets"
+      "Beets",
+      "Partridgeberries",
+      "Mushrooms",
+      "Rapini",
+      "Bananas",
+      "Kiwi",
+      "Lemons",
+      "Oranges",
+      "Pomegranates",
+      "Tangerines"
    ],
    "December":[
       "Pears",
@@ -288,11 +382,19 @@
       "Carrots",
       "Cabbage",
       "Red Onions",
+      "Yellow Onions",
       "Garlic",
       "Leeks",
       "Potatoes",
       "Squash",
       "Sweet Potatoes",
-      "Pears"
+      "Pears",
+      "Mushrooms",
+      "Bananas",
+      "Kiwi",
+      "Lemons",
+      "Oranges",
+      "Pomegranates",
+      "Tangerines"
    ]
 }
