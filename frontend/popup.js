@@ -169,7 +169,13 @@ function createReport(seasonalityRatio){
 	let ratioNodeText;
 	let root = document.documentElement;
 
-	root.style.setProperty('--fillRatio', (seasonalityRatio*100) + "%");
+	if(seasonalityRatio == 0){
+		root.style.setProperty('--fillRatio',  "5%");
+	}
+	else{
+		root.style.setProperty('--fillRatio', (seasonalityRatio*100) + "%");
+	}
+	
 	if(seasonalityRatio == 0){
 		ratioNodeText = document.createTextNode("Not In Season");
 	}else if(seasonalityRatio <= 0.5){

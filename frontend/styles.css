@@ -71,6 +71,7 @@ button {
   outline: none;
   display: block;
   font-size: 1.2rem;
+  font-weight: bolder;
   margin: 25% auto;
   text-align: center;
   transition: 500ms;
