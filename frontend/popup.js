@@ -31,6 +31,8 @@ function getIngredientSeasons(url) {
 		response.json().then(body => {
 			console.log('fetched!', response, body);
 			addIngredientsToUI(body.ingredients);
+			createTitle(body.title);
+			createReport(body.in_season_ratio);
 		})
     }).catch(error => {
         console.error(error);
@@ -39,7 +41,7 @@ function getIngredientSeasons(url) {
 }
 
 function addIngredientsToUI(ingredientSeasons) {
-	//DO DOM shit
+
 	var have_any_in_season_ingredients = false;
 	var have_any_not_in_season_ingredients = false;
 	
@@ -57,7 +59,7 @@ function addIngredientsToUI(ingredientSeasons) {
 		}
 		printIngredients(key, [] ,'other');
 	}
-	makeLoaderInvisible();
+	
 	
 	if(!have_any_in_season_ingredients){
 		printIngredients("None...", [],'in_season');
@@ -72,7 +74,7 @@ function addIngredientsToUI(ingredientSeasons) {
 	}
 	//printIngredients("None", 'not_in_season');
 
-	
+	makeLoaderInvisible();
 	makeVisible();
 }
 
@@ -149,11 +151,33 @@ function makeLoaderInvisible(){
 	document.getElementById('container').classList.add('loader_invisible');
 }
 
-function createTitle(){
-	let ingredientNode = document.createElement('p');
-	let ingredientNodeText = document.createTextNode(anIngredient);
-	ingredientNode.appendChild(ingredientNodeText);
-	seasonality.appendChild(ingredientNode);
+function createTitle(recipeTitle){
+	let titleNode = document.createElement('h1');
+	let titleNodeText = document.createTextNode(recipeTitle);
+	titleNode.appendChild(titleNodeText);
+	titleNode.className = 'recipeTitle';
+
+	let nextElement = document.getElementById('content');
+	nextElement.insertBefore(titleNode, nextElement.childNodes[3]);
+}
+
+function createReport(seasonalityRatio){
+	let ratioNode = document.createElement('h2');
+	let ratioNodeText;
+	if(seasonalityRatio == 0){
+		ratioNodeText = document.createTextNode("Not In Season");
+	}else if(seasonalityRatio <= 0.5){
+		ratioNodeText = document.createTextNode("Somewhat In Season");
+	}else if(seasonalityRatio < 1){
+		ratioNodeText = document.createTextNode("Mostly In Season");
+	}else{
+		ratioNodeText = document.createTextNode("Fully In Season");
+	}
+
+	ratioNode.appendChild(ratioNodeText);
+	let nextElement = document.getElementById('content');
+	nextElement.insertBefore(ratioNode, nextElement.childNodes[4]);
+
 }
 
 document.getElementById('startApp').addEventListener('click', getURL);

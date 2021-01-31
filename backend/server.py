@@ -1,5 +1,6 @@
 from flask import Flask, request
 from flask_cors import CORS
+from recipe_scrapers import WebsiteNotImplementedError
 from ingredient_matcher import check_seasonality, get_ingredients_from_url, get_recipe_title_from_url
 import json
 
@@ -16,8 +17,12 @@ def get_seasonal_details():
     print('*' * 100)
     url = request.get_json()['url']
     month = request.get_json()['month']
-    title = get_recipe_title_from_url(url)
-    ingredients = get_ingredients_from_url(url)
+    try:
+        title = get_recipe_title_from_url(url)
+        ingredients = get_ingredients_from_url(url)
+    except WebsiteNotImplementedError as e:
+        return json.dumps({'error': str(e)}), 403, {'ContentType': 'application/json'}
+
     in_season_dict, in_season_ratio = check_seasonality(ingredients, month)
 
     print(in_season_dict)
