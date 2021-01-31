@@ -256,3 +256,30 @@ button:hover {
     opacity: 1;
   }
 }
+
+/* Footer */
+footer{
+  min-height: 60px;
+  width: 100%;
+  background-color: #84d2f4;
+}
+
+footer a{
+  text-decoration: none;
+  color: black;
+  transition-duration: 500ms;
+}
+
+footer div{
+  padding: 5px 0;
+}
+
+footer a:hover{
+  color: white;
+  transition-duration: 500ms;
+}
+
+.flex-container{
+  display: flex;
+  justify-content: center;
+}
