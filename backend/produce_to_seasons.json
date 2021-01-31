@@ -289,6 +289,18 @@
         "August",
         "September"
     ],
+    "Coriander": [
+        "April",
+        "May",
+        "August",
+        "September"
+    ],
+    "Cilantro": [
+        "April",
+        "May",
+        "August",
+        "September"
+    ],
     "Kale": [
         "May",
         "June",
@@ -524,7 +536,27 @@
         "August",
         "September"
     ],
+    "Red Bell Peppers": [
+        "July",
+        "August",
+        "September"
+    ],
     "Green Peppers": [
+        "July",
+        "August",
+        "September"
+    ],
+    "Green Bell Peppers": [
+        "July",
+        "August",
+        "September"
+    ],
+    "Yellow Peppers": [
+        "July",
+        "August",
+        "September"
+    ],
+    "Yellow Bell Peppers": [
         "July",
         "August",
         "September"

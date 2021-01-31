@@ -90,7 +90,9 @@
       "Tangerines",
       "Chives",
       "Parsley",
-      "Watercress"
+      "Watercress",
+      "Coriander",
+      "Cilantro"
    ],
    "May":[
       "Asparagus",
@@ -125,7 +127,9 @@
       "Mustard Greens",
       "Sage",
       "Thyme",
-      "Watercress"
+      "Watercress",
+      "Coriander",
+      "Cilantro"
    ],
    "June":[
       "Asparagus",
@@ -202,7 +206,11 @@
       "Bell Peppers",
 	"Jalapenos",
 	"Red Peppers",
+	"Red Bell Peppers",
 	"Green Peppers",
+	"Green Bell Peppers",
+	"Yellow Peppers",
+	"Yellow Bell Peppers",
       "Potatoes",
       "Radishes",
       "Rhubarb",
@@ -272,7 +280,11 @@
       "Bell Peppers",
 	"Jalapenos",
 	"Red Peppers",
+	"Red Bell Peppers",
 	"Green Peppers",
+	"Green Bell Peppers",
+	"Yellow Peppers",
+	"Yellow Bell Peppers",
       "Potatoes",
       "Radishes",
       "Rhubarb",
@@ -310,7 +322,9 @@
       "Thyme",
       "Watercress",
       "Oregano",
-      "Rosemary"
+      "Rosemary",
+      "Coriander",
+      "Cilantro"
    ],
    "September":[
       "Cranberries",
@@ -344,7 +358,11 @@
       "Bell Peppers",
 	"Jalapenos",
 	"Red Peppers",
+	"Red Bell Peppers",
 	"Green Peppers",
+	"Green Bell Peppers",
+	"Yellow Peppers",
+	"Yellow Bell Peppers",
       "Potatoes",
       "Pumpkin",
       "Radishes",
@@ -376,7 +394,9 @@
       "Thyme",
       "Watercress",
       "Oregano",
-      "Rosemary"
+      "Rosemary",
+      "Coriander",
+      "Cilantro"
    ],
    "October":[
       "Cranberries",
