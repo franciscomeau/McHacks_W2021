@@ -17,9 +17,11 @@
       "Grapefruit",
       "Kiwi",
       "Lemons",
+	"Limes",
       "Oranges",
       "Pomegranates",
-      "Tangerines"
+      "Tangerines",
+      "Ginger"
    ],
    "February":[
       "Rutabagas",
@@ -39,8 +41,10 @@
       "Grapefruit",
       "Kiwi",
       "Lemons",
+	"Limes",
       "Oranges",
-      "Tangerines"
+      "Tangerines",
+      "Ginger"
    ],
    "March":[
       "Rutabagas",
@@ -60,9 +64,12 @@
       "Grapefruit",
       "Kiwi",
       "Lemons",
+	"Limes",
       "Oranges",
       "Pineapple",
-      "Tangerines"
+      "Tangerines",
+      "Chives",
+      "Parsley"
    ],
    "April":[
       "Asparagus",
@@ -71,16 +78,19 @@
       "Spinach",
       "Fava Beans",
       "Rhubarb",
-      "Bell Peppers",
       "Tomatoes",
       "Mushrooms",
       "Bananas",
       "Grapefruit",
       "Kiwi",
       "Lemons",
+	"Limes",
       "Oranges",
       "Pineapple",
-      "Tangerines"
+      "Tangerines",
+      "Chives",
+      "Parsley",
+      "Watercress"
    ],
    "May":[
       "Asparagus",
@@ -95,6 +105,7 @@
       "Swiss Chard",
       "Green Onions",
       "Scallions",
+	"Spring Onions",
       "Green Peas",
       "Snow Peas",
       "Cherries",
@@ -103,10 +114,18 @@
       "Grapefruit",
       "Kiwi",
       "Lemons",
+	"Limes",
       "Mangoes",
       "Oranges",
       "Pineapple",
-      "Tangerines"
+      "Tangerines",
+      "Avocado",
+      "Chives",
+      "Dill", 
+      "Mustard Greens",
+      "Sage",
+      "Thyme",
+      "Watercress"
    ],
    "June":[
       "Asparagus",
@@ -120,6 +139,7 @@
       "Lettuce",
       "Green Onions",
       "Scallions",
+	"Spring Onions",
       "Gooseberries",
       "Saskatoon Berries",
       "Strawberries",
@@ -139,10 +159,20 @@
       "Bananas",
       "Grapefruit",
       "Lemons",
+	"Limes",
       "Mangoes",
       "Oranges",
       "Papayas",
-      "Pineapple"
+      "Pineapple",
+      "Avocado",
+      "Basil",
+      "Chives",
+      "Garlic Chives",
+      "Dill", 
+      "Mustard Greens",
+      "Sage",
+      "Thyme",
+      "Watercress"
    ],
    "July":[
       "Gooseberries",
@@ -166,9 +196,13 @@
       "Lettuce",
       "Green Onions",
       "Scallions",
+	"Spring Onions",
       "Green Peas",
       "Snow Peas",
       "Bell Peppers",
+	"Jalapenos",
+	"Red Peppers",
+	"Green Peppers",
       "Potatoes",
       "Radishes",
       "Rhubarb",
@@ -188,9 +222,19 @@
       "Rapini",
       "Bananas",
       "Lemons",
+	"Limes",
       "Mangoes",
       "Papayas",
-      "Pineapple"
+      "Pineapple",
+      "Avocado",
+      "Basil",
+      "Chives",
+      "Garlic Chives",
+      "Dill", 
+      "Mustard Greens",
+      "Sage",
+      "Thyme",
+      "Watercress"
    ],
    "August":[
       "Raspberries",
@@ -223,8 +267,12 @@
       "Lettuce",
       "Green Onions",
       "Scallions",
+	"Spring Onions",
       "Parsnips",
       "Bell Peppers",
+	"Jalapenos",
+	"Red Peppers",
+	"Green Peppers",
       "Potatoes",
       "Radishes",
       "Rhubarb",
@@ -249,8 +297,20 @@
       "Rapini",
       "Bananas",
       "Lemons",
+	"Limes",
       "Mangoes",
-      "Papayas"
+      "Papayas",
+      "Avocado",
+      "Basil",
+      "Chives",
+      "Garlic Chives",
+      "Dill", 
+      "Mustard Greens",
+      "Sage",
+      "Thyme",
+      "Watercress",
+      "Oregano",
+      "Rosemary"
    ],
    "September":[
       "Cranberries",
@@ -278,9 +338,13 @@
       "Lettuce",
       "Green Onions",
       "Scallions",
+	"Spring Onions",
       "Onions",
       "Parsnips",
       "Bell Peppers",
+	"Jalapenos",
+	"Red Peppers",
+	"Green Peppers",
       "Potatoes",
       "Pumpkin",
       "Radishes",
@@ -300,8 +364,19 @@
       "Rapini",
       "Bananas",
       "Lemons",
+	"Limes",
       "Mangoes",
-      "Papayas"
+      "Papayas",
+      "Basil",
+      "Chives",
+      "Garlic Chives",
+      "Dill", 
+      "Mustard Greens",
+      "Sage",
+      "Thyme",
+      "Watercress",
+      "Oregano",
+      "Rosemary"
    ],
    "October":[
       "Cranberries",
@@ -323,9 +398,11 @@
       "Lettuce",
       "Green Onions",
       "Scallions",
+	"Spring Onions",
       "Onions",
       "Parsnips",
       "Bell Peppers",
+	"Jalapenos",
       "Potatoes",
       "Pumpkin",
       "Radishes",
@@ -342,7 +419,9 @@
       "Bananas",
       "Kiwi",
       "Lemons",
-      "Pomegranates"
+	"Limes",
+      "Pomegranates",
+      "Rosemary"
    ],
    "November":[
       "Cranberries",
@@ -369,9 +448,11 @@
       "Bananas",
       "Kiwi",
       "Lemons",
+	"Limes",
       "Oranges",
       "Pomegranates",
-      "Tangerines"
+      "Tangerines",
+      "Ginger"
    ],
    "December":[
       "Pears",
@@ -393,8 +474,10 @@
       "Bananas",
       "Kiwi",
       "Lemons",
+	"Limes",
       "Oranges",
       "Pomegranates",
-      "Tangerines"
+      "Tangerines",
+      "Ginger"
    ]
 }

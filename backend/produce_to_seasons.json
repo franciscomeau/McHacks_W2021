@@ -171,6 +171,20 @@
         "November",
         "December"
     ],
+    "Limes": [
+        "January",
+        "February",
+        "March",
+        "April",
+        "May",
+        "June",
+        "July",
+        "August",
+        "September",
+        "October",
+        "November",
+        "December"
+    ],
     "Oranges": [
         "January",
         "February",
@@ -196,12 +210,31 @@
         "November",
         "December"
     ],
+    "Ginger": [
+        "January",
+        "February",
+        "November",
+        "December"
+    ],
     "Pineapple": [
         "March",
         "April",
         "May",
         "June",
         "July"
+    ],
+    "Chives": [
+        "March",
+        "April",
+        "May",
+        "June",
+        "July",
+        "August",
+        "September"
+    ],
+    "Parsley": [
+        "March",
+        "April"
     ],
     "Asparagus": [
         "April",
@@ -241,15 +274,16 @@
         "July",
         "August"
     ],
-    "Bell Peppers": [
-        "April",
-        "July",
-        "August",
-        "September",
-        "October"
-    ],
     "Tomatoes": [
         "April",
+        "June",
+        "July",
+        "August",
+        "September"
+    ],
+    "Watercress": [
+        "April",
+        "May",
         "June",
         "July",
         "August",
@@ -302,6 +336,14 @@
         "September",
         "October"
     ],
+    "Spring Onions": [
+        "May",
+        "June",
+        "July",
+        "August",
+        "September",
+        "October"
+    ],
     "Green Peas": [
         "May",
         "June",
@@ -319,6 +361,40 @@
         "August"
     ],
     "Mangoes": [
+        "May",
+        "June",
+        "July",
+        "August",
+        "September"
+    ],
+    "Avocado": [
+        "May",
+        "June",
+        "July",
+        "August"
+    ],
+    "Dill": [
+        "May",
+        "June",
+        "July",
+        "August",
+        "September"
+    ],
+    "Mustard Greens": [
+        "May",
+        "June",
+        "July",
+        "August",
+        "September"
+    ],
+    "Sage": [
+        "May",
+        "June",
+        "July",
+        "August",
+        "September"
+    ],
+    "Thyme": [
         "May",
         "June",
         "July",
@@ -381,6 +457,18 @@
         "August",
         "September"
     ],
+    "Basil": [
+        "June",
+        "July",
+        "August",
+        "September"
+    ],
+    "Garlic Chives": [
+        "June",
+        "July",
+        "August",
+        "September"
+    ],
     "Raspberries": [
         "July",
         "August"
@@ -415,6 +503,28 @@
         "November"
     ],
     "Cucumber": [
+        "July",
+        "August",
+        "September"
+    ],
+    "Bell Peppers": [
+        "July",
+        "August",
+        "September",
+        "October"
+    ],
+    "Jalapenos": [
+        "July",
+        "August",
+        "September",
+        "October"
+    ],
+    "Red Peppers": [
+        "July",
+        "August",
+        "September"
+    ],
+    "Green Peppers": [
         "July",
         "August",
         "September"
@@ -507,6 +617,15 @@
     "Grapes": [
         "August",
         "September"
+    ],
+    "Oregano": [
+        "August",
+        "September"
+    ],
+    "Rosemary": [
+        "August",
+        "September",
+        "October"
     ],
     "Cranberries": [
         "September",
