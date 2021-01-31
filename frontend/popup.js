@@ -118,21 +118,37 @@ function createTitle(recipeTitle){
 }
 
 function createReport(seasonalityRatio){
-	let ratioNode = document.createElement('h2');
+	let ratioHolder = document.createElement('div');
+	ratioHolder.className = 'bar';
+	let ratioFill = document.createElement('div');
+	ratioFill.className = 'progress';
 	let ratioNodeText;
+	let root = document.documentElement;
+
+	root.style.setProperty('--fillRatio', (seasonalityRatio*100) + "%");
 	if(seasonalityRatio == 0){
 		ratioNodeText = document.createTextNode("Not In Season");
 	}else if(seasonalityRatio <= 0.5){
 		ratioNodeText = document.createTextNode("Somewhat In Season");
+		root.style.setProperty('--finalColor', "#fdd835");
 	}else if(seasonalityRatio < 1){
 		ratioNodeText = document.createTextNode("Mostly In Season");
+		root.style.setProperty('--finalColor', "green");
 	}else{
 		ratioNodeText = document.createTextNode("Fully In Season");
+		root.style.setProperty('--finalColor', "#c4f236");
 	}
 
-	ratioNode.appendChild(ratioNodeText);
+	
+	ratioHolder.appendChild(ratioFill);
 	let nextElement = document.getElementById('content');
-	nextElement.insertBefore(ratioNode, nextElement.childNodes[4]);
+	nextElement.insertBefore(ratioHolder, nextElement.childNodes[4]);
+
+	let SeasonOTron = document.createElement('div');
+	let SeasonOTronText = document.createTextNode("Season-O-Meter");
+	SeasonOTron.className = "SOMeter";
+	SeasonOTron.appendChild(SeasonOTronText);
+	nextElement.insertBefore(SeasonOTron, nextElement.childNodes[5]);
 
 }
 
