@@ -12,7 +12,7 @@ ALL_INGREDIENTS = [ing for l in SEASONS_TO_PRODUCE.values() for ing in l]
 
 MONTHS = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']
 
-FILTER_WORDS = ['can', 'cans', 'canned', 'black pepper', 'cayenne pepper', 'paste', 'frozen', 'flakes', 'powder', 'dried']
+FILTER_WORDS = ['can', 'cans', 'canned', 'black pepper', 'cayenne pepper', 'paste', 'frozen', 'flakes', 'powder', 'dried', 'sausage']
 
 
 def stem_produce(word):
