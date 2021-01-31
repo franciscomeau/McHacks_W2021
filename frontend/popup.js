@@ -80,8 +80,6 @@ function addIngredientsToUI(ingredientSeasons) {
 
 function printIngredients(anIngredient, inSeasonArray, divID){
 	let seasonality = document.getElementById(divID);
-	console.log("DIV IDDDDD" + divID);
-	console.log("HELLLLO" + anIngredient);
 
     let ingredientNode = document.createElement('p');
     let ingredientNodeText = document.createTextNode(anIngredient);
