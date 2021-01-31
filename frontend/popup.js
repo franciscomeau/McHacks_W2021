@@ -49,26 +49,27 @@ function addIngredientsToUI(ingredientSeasons) {
 		console.log(ingredientSeasons[key].in_season);
 		if(ingredientSeasons[key].in_season == "In season"){
 			// Print out in the inSeason div
-			printIngredients(ingredientSeasons[key].ingredient, 'in_season');
+			printIngredients(ingredientSeasons[key].ingredient, ingredientSeasons[key].seasons, 'in_season');
 			have_any_in_season_ingredients = true;
+
 		} else if(ingredientSeasons[key].in_season == "Not in season"){
 			// Print out in the not_in_season div
-			printIngredients(ingredientSeasons[key].ingredient, 'not_in_season');
-			have_any_not_in_season_ingredients = true;
+			printIngredients(ingredientSeasons[key].ingredient,ingredientSeasons[key].seasons, 'not_in_season');
+            have_any_not_in_season_ingredients = true;
 		}
-		printIngredients(key, 'other', in_season=ingredientSeasons[key].in_season);
+		printIngredients(key, [] ,'other');
 	}
 	
 	
 	if(!have_any_in_season_ingredients){
-		printIngredients("None...", 'in_season');
+		printIngredients("None...", [],'in_season');
 	}
 
 	if(!have_any_not_in_season_ingredients){
 		if(!have_any_in_season_ingredients){
-			printIngredients("Also none!", 'not_in_season');
+			printIngredients("Also none!",[], 'not_in_season');
 		} else {
-			printIngredients("None!", 'not_in_season');
+			printIngredients("None!",[], 'not_in_season');
 		}
 	}
 	//printIngredients("None", 'not_in_season');
@@ -77,15 +78,58 @@ function addIngredientsToUI(ingredientSeasons) {
 	makeVisible();
 }
 
-function printIngredients(anIngredient, divID, in_season="N/A"){
+function printIngredients(anIngredient, inSeasonArray, divID){
 	let seasonality = document.getElementById(divID);
 	console.log("DIV IDDDDD" + divID);
 	console.log("HELLLLO" + anIngredient);
 
-	let ingredientNode = document.createElement('p');
-	let ingredientNodeText = document.createTextNode(anIngredient);
-	ingredientNode.appendChild(ingredientNodeText);
+    let ingredientNode = document.createElement('p');
+    let ingredientNodeText = document.createTextNode(anIngredient);
+    
+    ingredientNode.appendChild(ingredientNodeText);
+
+    //Only have tooltip for in seasonal things
+    if(inSeasonArray.length > 0)
+        ingredientNode.appendChild(createInSeasonTooltip(inSeasonArray, ingredientNode))
+
 	seasonality.appendChild(ingredientNode);
+}
+
+function createInSeasonTooltip(inSeasonArray, targetNode) {
+    
+
+    let tooltip = document.createElement('p');
+    tooltip.classList.add('tooltip');
+    tooltip.appendChild(generateTooltipHeader())
+    tooltip.appendChild(document.createTextNode(inSeasonArray.join(', ')));
+
+    targetNode.addEventListener("mouseover", showTooltip(tooltip));
+
+    targetNode.addEventListener("mouseout", hideTooltip(tooltip));
+    
+    return tooltip;
+}
+
+function generateTooltipHeader() {
+
+    let headerTextContainer = document.createElement('p');
+    headerTextContainer.classList.add('tooltipHeader');
+    
+    headerTextContainer.appendChild(document.createTextNode('Fresh Seasons'));
+
+    return headerTextContainer
+}
+
+function showTooltip(tooltipEl) {
+    return function () {
+        tooltipEl.classList.add('tooltipShow');
+    }
+}
+
+function hideTooltip(tooltipEl) {
+    return function () {
+        tooltipEl.classList.remove('tooltipShow');
+    }
 }
 
 function makeVisible(){
