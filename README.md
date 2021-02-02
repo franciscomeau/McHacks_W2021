@@ -36,3 +36,5 @@ git subtree push --prefix backend heroku master
 ```
 
 > Subway just tells you to eat fresh, we make sure you do
+
+https://devpost.com/software/well-seasoned
